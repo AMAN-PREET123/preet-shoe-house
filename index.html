@@ -1,14 +1,467 @@
 <html>
+
 <head>
-    <title>Preet Shoe House</title> 
-    <img src="logo.png" alt="shoes">
+    <title>Preet Shoe House</title>
+     <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #222;
+        }
+        .top-bar {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .navbar {
+            background-color: white;
+            padding: 10px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar img{
+            width: 200px;
+            height: 90px;
+            object-fit: contain;
+        }
+        .navbar h1 {
+            color: #111;
+            margin: 5px;
+        }
+        .nav-links {
+            display:flex;
+            align-items:center;
+            gap:22px;
+        }
+        .nav-links a {
+            color: #222;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight:bold;
+            padding:10px 5px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            color: #c58b2a;
+        }
+        .nav-links a.active {
+            color: #c58b2a;
+            border-bottom: 2px solid #c58b2a;
+        }
+       .hero {
+            background-color: #f5ead9;
+            padding: 35px 8%;
+            align-items: center;
+            min-height: 250px;
+            display: flex;
+            justify-content: space-between;
+            gap:60px;
+        }
+        .hero-image {
+            width: 32%;
+            max-width: 450px;
+            height: auto;
+            object-fit: contain;
+        }
+        .hero-content {
+            flex:1;
+            max-width: 600px;
+        }
+       .hero-tag {
+            color: #c58b2a;
+            font-size: 14px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+      .hero h1 {
+           font-size: 40px;
+           color: #111;
+           margin: 20px 0;
+           letter-spacing: 2px;
+           line-height:1.2; 
+           font-weight: bold; 
+        }
+      .hero p {
+           font-size: 17px;
+           color: #555;
+           line-height: 1.6;
+           margin: 6px 0;
+        }
+      .hero button {
+           background-color: #c58b2a;
+           color: white;
+           border: none;
+           padding: 14px 38px;
+           font-size: 16px;
+           font-weight: bold;
+           margin-top: 20px;
+           cursor: pointer;
+           border-radius: 3px;
+           transition: 0.3s;
+       }
+      .hero button:hover {
+           background-color: #111;
+           transform: translateY(-3px);
+       }
+      .categories {
+           text-align: center;
+           padding: 60px 20px;
+      }
+      .categories h2 {
+           font-size: 30px;
+           color: #111;
+           margin-bottom: 30px;
+           position: relative; 
+      }
+      .categories h2::before,
+      .categories h2::after {
+           content: "";
+           display: inline-block;
+           width: 55px;
+           height: 2px;
+           background-color: #c58b2a;
+           vertical-align: middle;
+           margin: 0 15px;
+      }
+      .category-card{
+           display: inline-block;
+           width: 180px;
+           background-color: #f5ead9;
+           padding: 25px 20px;
+           margin: 10px;
+           border-radius: 8px;
+           color: #222;
+           min-width: 110px;
+           text-decoration: none;
+           font-size: 18px;
+           font-weight: bold;
+           transition: 0.3s;
+           border: 1px solid #ddd;
+           box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      }
+     .category-card:hover {
+           background-color: #c58b2a;
+           color: white;
+           transform: translateY(-5px);
+      }
+     .category-card span {
+           font-size: 28px;
+           display: block;
+           margin-bottom: 10px;
+      }
+     .featured {
+          text-align: center;
+          padding: 60px 20px 70px 20px;
+          background-color: white;
+     }
+    .featured h2 {
+          font-size: 30px;
+          color: #111;
+          margin-bottom: 20px;
+          letter-spacing: 1px;
+          position: relative;
+     }
+    .featured h2::before,
+    .featured h2::after {
+          content: "";
+          display: inline-block;
+          width: 55px;
+          height: 2px;
+          background-color: #c58b2a;
+          vertical-align: middle;
+          margin: 0 15px;
+    }
+    .featured-text {
+          color: #666;
+          font-size: 16px;
+          margin-top: -20px;
+          margin-bottom: 30px;
+     }
+    .shoe-card {
+          display: inline-block;
+          width: 230px;
+          min-height: 360px;
+          background-color: white;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          padding: 20px;
+          margin: 15px;
+          text-align: center;
+          vertical-align: top;
+          transition: 0.3s;
+          box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+     }
+    .shoe-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+     }
+    .shoe-card img {
+          width: 100%;
+          height: 190px;
+          object-fit: contain;
+          margin-bottom:15px;
+    }
+    .shoe-card h3 {
+          color: #222;
+          font-size: 17px;
+          margin: 10px 0;
+          line-height: 1.4;
+    }
+    .shoe-card p {
+         font-size: 19px;
+         font-weight: bold;
+         color: #c58b2a;
+         margin: 12px 0 18px 0;
+    }
+    .shoe-card button {
+         background-color: #c58b2a;
+         color: white;
+         border: none;
+         padding: 12px 28px;
+         border-radius: 3px;
+         cursor: pointer;
+         font-size: 14px;
+         font-weight: bold;
+         transition: 0.3s;
+    }
+    .shoe-card button:hover {
+         background-color: #111;
+    }
+    .why-us {
+         text-align: center;
+         padding: 60px 20px;
+         background-color: #f5ead9;
+    }
+    .why-us h2 {
+         font-size: 30px;
+         color: #111;
+         margin-bottom: 30px;
+         letter-spacing: 1px;
+         position: relative;
+    }
+    .why-us h2::before,
+    .why-us h2::after {
+         content: "";
+         display: inline-block;
+         width: 55px;
+         height: 2px;
+         background-color: #c58b2a;
+         vertical-align: middle;
+         margin: 0 15px;
+    }
+    .why-card {
+         display: inline-block;
+         width: 230px;
+         background-color: white;
+         padding: 25px 20px;
+         margin: 10px;
+         border-radius: 8px;
+         vertical-align: top;
+         box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+    .why-card span {
+         font-size: 30px;
+         color: #c58b2a;
+    }
+    .why-card h3 {
+         font-size: 18px;
+         color: #222;
+         margin: 15px 0 10px 0;
+    }
+    .why-card p {
+         font-size: 14px;
+         color: #666;
+         line-height: 1.5;
+         margin: 0;
+    }
+    .footer {
+           background-color: #111;
+           color: white;
+           text-align: center;
+           padding: 30px 20px;
+           margin-top: 30px;
+     }
+    .footer p {
+           margin: 8px;
+           font-size: 14px;
+    }
+    .footer h2 {
+          color: #c58b2a;
+          font-size: 24px;
+          letter-spacing: 2px;
+          margin: 0 0 15px 0;
+    }
+   /* Mobile / Small Screen */
+ @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 70%;
+    }
+
+    .shoe-card {
+        margin: 10px;
+    }
+
+}
+
+</style>
+    </style>
 </head>
 
 <body>
 
-    <h1>Welcome to Preet Shoe House</h1>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        Free Delivery on Orders Over ₹999
+    </div>
 
-    <p>Your one-stop shop for stylish shoes.</p>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <img src="logo1.png" alt="Preet Shoe House Logo">
+       <div class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Sports</a>
+     </div>
+  </div>
+    <!-- Hero Section -->
+    <div class="hero">
+         <div class="hero-content">
+        <p class="hero-tag">PREMIUM FOOTWEAR FOR EVERY STEP</p>
+
+        <h1>STEP INTO STYLE,<br>
+           WALK WITH CONFIDENCE</h1>
+
+        <p>
+            Stylish. Comfortable. Durable.
+        </p>
+
+        <p>
+            Find the perfect pair for every step you take.
+        </p>
+             <button>SHOP NOW</button>
+
+       </div>
+            <img src="shoe1.png" alt="Featured Shoe" class="hero-image">
+   
+    </div>
+
+    <!-- Categories -->
+    <div class="categories">
+
+        <h2>SHOP BY CATEGORY</h2>
+        <a href="#" class="category-card">
+               <span>👤</span>
+           Men
+        </a>
+        <a href="#" class="category-card">
+               <span>👩</span>
+           Women
+        </a>
+        <a href="#" class="category-card">
+               <span>👦</span>
+           Kids
+        </a>
+        <a href="#" class="category-card">
+               <span>👟</span>
+          Sports
+        </a>
+     
+    </div>
+   <div class="featured">
+
+    <h2>FEATURED SHOES</h2>
+    <p class="featured-text">
+    Explore our latest and most popular footwear.
+   </p>
+    <div class="shoe-card">
+        <img src="shoe2.png" alt="Men's Shoes">
+        <h3>Classic Men's Shoes</h3>
+        <p>₹1,499</p>
+        <button>VIEW PRODUCT</button>
+    </div>
+    <div class="shoe-card">
+        <img src="shoe4.png" alt="Women's Shoes">
+        <h3>Elegant Women's Shoes</h3>
+        <p>₹1,699</p>
+        <button>VIEW PRODUCT</button>
+    </div>
+    <div class="shoe-card">
+        <img src="shoe3.png" alt="Kids' Shoes">
+        <h3>Comfortable Kids' Shoes</h3>
+        <p>₹999</p>
+        <button>VIEW PRODUCT</button>
+    </div>
+    <div class="shoe-card">
+        <img src="shoe1.png" alt="Sports Shoes">
+        <h3>Premium Sports Shoes</h3>
+        <p>₹1,899</p>
+        <button>VIEW PRODUCT</button>
+    </div>
+   </div>
+<!-- Why Choose Us -->
+<div class="why-us">
+
+    <h2>WHY CHOOSE US</h2>
+
+    <div class="why-card">
+        <span>✓</span>
+        <h3>Quality Footwear</h3>
+        <p>Comfortable and durable shoes made for everyday life.</p>
+    </div>
+
+    <div class="why-card">
+        <span>🚚</span>
+        <h3>Fast Delivery</h3>
+        <p>Get your favourite footwear delivered to your doorstep.</p>
+    </div>
+
+    <div class="why-card">
+        <span>↩</span>
+        <h3>Easy Returns</h3>
+        <p>Simple and convenient returns when you need them.</p>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <!-- Footer -->
+    <div class="footer">
+
+        <p>© 2026 Preet Shoe House</p>
+        <p>Stylish. Comfortable. Made for Every Step.</p>
+        <p>© 2026 Preet Shoe House. All Rights Reserved.</p>
+    </div>
 
 </body>
+
 </html>
