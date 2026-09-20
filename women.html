@@ -1,1 +1,309 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title>Women's Shoes - Preet Shoe House</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #222;
+            background-color: #f5ead9;
+        }
+
+        .top-bar {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .navbar {
+            background-color: white;
+            padding: 10px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar img {
+            width: 200px;
+            height: 90px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .nav-links a {
+            color: #222;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 10px 5px;
+        }
+
+        .nav-links a:hover {
+            color: #c58b2a;
+        }
+
+        .nav-links a.active {
+            color: #c58b2a;
+            border-bottom: 2px solid #c58b2a;
+        }
+
+        .page-heading {
+            text-align: center;
+            padding: 50px 20px 25px;
+        }
+
+        .page-heading h1 {
+            font-size: 38px;
+            color: #111;
+            margin-bottom: 10px;
+        }
+
+        .page-heading p {
+            color: #666;
+            font-size: 17px;
+        }
+
+        .products {
+            text-align: center;
+            padding: 20px 20px 60px;
+        }
+
+        .shoe-card {
+            display: inline-block;
+            vertical-align: top;
+            width: 230px;
+            min-height: 390px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .shoe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .shoe-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .shoe-card h3 {
+            color: #222;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .shoe-card p {
+            font-size: 19px;
+            font-weight: bold;
+            color: #c58b2a;
+            margin: 12px 0 18px;
+        }
+
+        .shoe-card button {
+            background-color: #c58b2a;
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .shoe-card button:hover {
+            background-color: #111;
+        }
+
+        .footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .footer h2 {
+            color: #c58b2a;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+
+        .footer p {
+            font-size: 14px;
+            margin: 8px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        Free Delivery on Orders Over ₹999
+    </div>
+
+
+    <!-- Navigation -->
+    <div class="navbar">
+
+        <img src="logo1.png" alt="Preet Shoe House Logo">
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="men.html">Men</a>
+
+            <a href="women.html" class="active">Women</a>
+
+            <a href="kids.html">Kids</a>
+
+            <a href="sports.html">Sports</a>
+
+            <a href="offers.html">Offers</a>
+
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Page Heading -->
+    <div class="page-heading">
+
+        <h1>Women's Shoes</h1>
+
+        <p>
+            Discover stylish and comfortable footwear for women.
+        </p>
+
+    </div>
+
+
+    <!-- Women's Products -->
+    <div class="products">
+
+
+        <!-- Product 1 -->
+        <div class="shoe-card">
+
+            <img src="wshoe1.webp" alt="Women's Sports Shoes">
+
+            <h3>Women's Sports Shoes</h3>
+
+            <p>₹1,599</p>
+
+            <button>VIEW PRODUCT</button>
+
+        </div>
+
+
+        <!-- Product 2 -->
+        <div class="shoe-card">
+
+            <img src="wshoe2.webp" alt="Block Heel Sandals">
+
+            <h3>Block Heel Sandals</h3>
+
+            <p>₹1,499</p>
+
+            <button>VIEW PRODUCT</button>
+
+        </div>
+
+
+        <!-- Product 3 -->
+        <div class="shoe-card">
+
+            <img src="wshoe3.webp" alt="Floral Sneakers">
+
+            <h3>Floral Sneakers</h3>
+
+            <p>₹1,399</p>
+
+            <button>VIEW PRODUCT</button>
+
+        </div>
+
+
+        <!-- Product 4 -->
+        <div class="shoe-card">
+
+            <img src="wshoe4.webp" alt="Women's Ankle Boots">
+
+            <h3>Women's Ankle Boots</h3>
+
+            <p>₹1,899</p>
+
+            <button>VIEW PRODUCT</button>
+
+        </div>
+
+
+        <!-- Product 5 -->
+        <div class="shoe-card">
+
+            <img src="wshoe5.png" alt="Lavender Wedge Sandals">
+
+            <h3>Lavender Wedge Sandals</h3>
+
+            <p>₹1,299</p>
+
+            <button>VIEW PRODUCT</button>
+
+        </div>
+
+
+        <!-- Product 6 -->
+        <div class="shoe-card">
+
+            <img src="wshoe6.jpg" alt="Embroidered Juttis">
+
+            <h3>Embroidered Juttis</h3>
+
+            <p>₹999</p>
+
+            <button>VIEW PRODUCT</button>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+
+        <h2>PREET SHOE HOUSE</h2>
+
+        <p>Stylish. Comfortable. Made for Every Step.</p>
+
+        <p>© 2026 Preet Shoe House. All Rights Reserved.</p>
+
+    </div>
+
+</body>
+
+</html>
