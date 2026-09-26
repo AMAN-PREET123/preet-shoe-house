@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Block Heel Sandals - Preet Shoe House</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #222;
+            background-color: #f5ead9;
+        }
+
+        .top-bar {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .navbar {
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar img {
+            width: 200px;
+            height: 90px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 22px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #222;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover,
+        .nav-links .active {
+            color: #c58b2a;
+        }
+
+        .product-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            padding: 60px 8%;
+            min-height: 500px;
+        }
+
+        .product-image {
+            background-color: white;
+            width: 450px;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+
+        .product-image img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .product-details {
+            max-width: 450px;
+        }
+
+        .product-details h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 25px;
+            font-weight: bold;
+            color: #c58b2a;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .sizes {
+            margin-bottom: 25px;
+        }
+
+        .sizes span {
+            display: inline-block;
+            border: 1px solid #999;
+            padding: 8px 14px;
+            margin-right: 8px;
+            background-color: white;
+        }
+
+        .buy-btn {
+            background-color: #c58b2a;
+            color: white;
+            border: none;
+            padding: 13px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .buy-btn:hover {
+            background-color: #111;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            color: #222;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-btn:hover {
+            color: #c58b2a;
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 800px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .product-section {
+                flex-direction: column;
+                padding: 40px 5%;
+            }
+
+            .product-image {
+                width: 90%;
+                height: 350px;
+            }
+
+            .product-details {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar">
+        STEP INTO STYLE, WALK WITH CONFIDENCE
+    </div>
+
+    <nav class="navbar">
+
+        <img src="logo1.png" alt="Preet Shoe House Logo">
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="men.html">Men</a>
+            <a href="women.html" class="active">Women</a>
+            <a href="kids.html">Kids</a>
+            <a href="sports.html">Sports</a>
+            <a href="offers.html">Offers</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+    </nav>
+
+
+    <section class="product-section">
+
+        <div class="product-image">
+            <img src="wshoe2.webp" alt="Block Heel Sandals">
+        </div>
+
+
+        <div class="product-details">
+
+            <h1>Block Heel Sandals</h1>
+
+            <div class="price">₹1,499</div>
+
+            <p class="description">
+                Stylish and comfortable block heel sandals designed
+                for women who want a fashionable and elegant look.
+            </p>
+
+            <div class="sizes">
+                <strong>Available Sizes:</strong><br><br>
+
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+            </div>
+
+            <button class="buy-btn">BUY NOW</button>
+
+            <br>
+
+            <a href="women.html" class="back-btn">
+                ← Back to Women
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        © 2026 Preet Shoe House | All Rights Reserved
+    </footer>
+
+</body>
+
+</html>
