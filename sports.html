@@ -1,0 +1,363 @@
+<html>
+
+<head>
+
+    <title>Sports Shoes - Preet Shoe House</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #222;
+        }
+
+        .top-bar {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .navbar {
+            background-color: white;
+            padding: 10px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar img {
+            width: 200px;
+            height: 90px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .nav-links a {
+            color: #222;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 10px 5px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #c58b2a;
+        }
+
+        .nav-links a.active {
+            color: #c58b2a;
+            border-bottom: 2px solid #c58b2a;
+        }
+
+        /* Sports Hero */
+
+        .sports-hero {
+            background-color: #f5ead9;
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .sports-hero p {
+            color: #c58b2a;
+            font-size: 14px;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        .sports-hero h1 {
+            font-size: 40px;
+            color: #111;
+            margin: 20px 0 10px;
+            letter-spacing: 2px;
+        }
+
+        .sports-hero .subtitle {
+            color: #555;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        /* Sports Shoes */
+
+        .sports-section {
+            text-align: center;
+            padding: 60px 20px 70px;
+            background-color: white;
+        }
+
+        .sports-section h2 {
+            font-size: 30px;
+            color: #111;
+            margin-bottom: 20px;
+        }
+
+        .section-text {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .shoe-card {
+            display: inline-block;
+            width: 230px;
+            min-height: 360px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+            vertical-align: top;
+            transition: 0.3s;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .shoe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .shoe-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .shoe-card h3 {
+            color: #222;
+            font-size: 17px;
+            margin: 10px 0;
+            line-height: 1.4;
+        }
+
+        .shoe-card p {
+            font-size: 19px;
+            font-weight: bold;
+            color: #c58b2a;
+            margin: 12px 0 18px;
+        }
+
+        .shoe-card button {
+            background-color: #c58b2a;
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .shoe-card button:hover {
+            background-color: #111;
+        }
+
+        /* Footer */
+
+        .footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 30px;
+        }
+
+        .footer p {
+            margin: 8px;
+            font-size: 14px;
+        }
+
+        .footer h2 {
+            color: #c58b2a;
+            font-size: 24px;
+            letter-spacing: 2px;
+            margin: 0 0 15px;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .sports-hero {
+                padding: 40px 20px;
+            }
+
+            .sports-hero h1 {
+                font-size: 32px;
+            }
+
+            .shoe-card {
+                margin: 10px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+
+    <div class="top-bar">
+        Free Delivery on Orders Over ₹1990
+    </div>
+
+
+    <!-- Navigation Bar -->
+
+    <div class="navbar">
+
+        <img src="logo1.png" alt="Preet Shoe House Logo">
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="men.html">Men</a>
+
+            <a href="women.html">Women</a>
+
+            <a href="kids.html">Kids</a>
+
+            <a href="sports.html" class="active">Sports</a>
+
+            <a href="offers.html">offers</a>
+
+            <a href="contact.html">contact us</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Sports Hero -->
+
+    <div class="sports-hero">
+
+        <p>PERFORMANCE • COMFORT • STYLE</p>
+
+        <h1>SPORTS SHOES</h1>
+
+        <p class="subtitle">
+            Step up your performance with comfortable and stylish
+            sports footwear designed for every active step.
+        </p>
+
+    </div>
+
+
+    <!-- Sports Shoes Section -->
+
+    <div class="sports-section">
+
+        <h2>EXPLORE SPORTS SHOES</h2>
+
+        <p class="section-text">
+            Discover our collection of sports shoes for your active lifestyle.
+        </p>
+
+
+        <!-- Shoe 1 -->
+
+        <div class="shoe-card">
+
+            <img src="shoe1.png" alt="Premium Sports Shoes">
+
+            <h3>Premium Sports Shoes</h3>
+
+            <p>₹1,899</p>
+
+            <button>VIEW PRODUCT</button>
+
+        </div>
+
+
+        <!-- Shoe 2 -->
+
+        <div class="shoe-card">
+
+            <img src="shoe2.png" alt="Running Sports Shoes">
+
+            <h3>Running Sports Shoes</h3>
+
+            <p>₹1,599</p>
+
+            <button>VIEW PRODUCT</button>
+
+        </div>
+
+
+        <!-- Shoe 3 -->
+
+        <div class="shoe-card">
+
+            <img src="shoe3.png" alt="Comfort Sports Shoes">
+
+            <h3>Comfort Sports Shoes</h3>
+
+            <p>₹1,499</p>
+
+            <button>VIEW PRODUCT</button>
+
+        </div>
+
+
+        <!-- Shoe 4 -->
+
+        <div class="shoe-card">
+
+            <img src="shoe4.png" alt="Active Sports Shoes">
+
+            <h3>Active Sports Shoes</h3>
+
+            <p>₹1,799</p>
+
+            <button>VIEW PRODUCT</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <h2>PREET SHOE HOUSE</h2>
+
+        <p>© 2026 Preet Shoe House</p>
+
+        <p>Stylish. Comfortable. Made for Every Step.</p>
+
+        <p>© 2026 Preet Shoe House. All Rights Reserved.</p>
+
+    </div>
+
+</body>
+
+</html>
