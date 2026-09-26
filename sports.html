@@ -1,7 +1,7 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-
     <title>Sports Shoes - Preet Shoe House</title>
 
     <style>
@@ -10,6 +10,7 @@
             margin: 0;
             font-family: Arial, sans-serif;
             color: #222;
+            background-color: #f5ead9;
         }
 
         .top-bar {
@@ -47,7 +48,6 @@
             font-size: 17px;
             font-weight: bold;
             padding: 10px 5px;
-            transition: 0.3s;
         }
 
         .nav-links a:hover {
@@ -59,67 +59,40 @@
             border-bottom: 2px solid #c58b2a;
         }
 
-        /* Sports Hero */
-
-        .sports-hero {
-            background-color: #f5ead9;
-            padding: 50px 8%;
+        .page-heading {
             text-align: center;
+            padding: 50px 20px 25px;
         }
 
-        .sports-hero p {
-            color: #c58b2a;
-            font-size: 14px;
-            letter-spacing: 3px;
-            font-weight: bold;
-        }
-
-        .sports-hero h1 {
-            font-size: 40px;
+        .page-heading h1 {
+            font-size: 38px;
             color: #111;
-            margin: 20px 0 10px;
-            letter-spacing: 2px;
+            margin-bottom: 10px;
         }
 
-        .sports-hero .subtitle {
-            color: #555;
-            font-size: 17px;
-            line-height: 1.6;
-        }
-
-        /* Sports Shoes */
-
-        .sports-section {
-            text-align: center;
-            padding: 60px 20px 70px;
-            background-color: white;
-        }
-
-        .sports-section h2 {
-            font-size: 30px;
-            color: #111;
-            margin-bottom: 20px;
-        }
-
-        .section-text {
+        .page-heading p {
             color: #666;
-            font-size: 16px;
-            margin-bottom: 30px;
+            font-size: 17px;
+        }
+
+        .products {
+            text-align: center;
+            padding: 20px 20px 60px;
         }
 
         .shoe-card {
             display: inline-block;
+            vertical-align: top;
             width: 230px;
-            min-height: 360px;
+            min-height: 390px;
             background-color: white;
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 20px;
             margin: 15px;
             text-align: center;
-            vertical-align: top;
-            transition: 0.3s;
             box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            transition: 0.3s;
         }
 
         .shoe-card:hover {
@@ -136,9 +109,8 @@
 
         .shoe-card h3 {
             color: #222;
-            font-size: 17px;
+            font-size: 18px;
             margin: 10px 0;
-            line-height: 1.4;
         }
 
         .shoe-card p {
@@ -157,66 +129,31 @@
             cursor: pointer;
             font-size: 14px;
             font-weight: bold;
-            transition: 0.3s;
         }
 
         .shoe-card button:hover {
             background-color: #111;
         }
 
-        /* Footer */
-
         .footer {
             background-color: #111;
             color: white;
             text-align: center;
             padding: 30px 20px;
-            margin-top: 30px;
-        }
-
-        .footer p {
-            margin: 8px;
-            font-size: 14px;
         }
 
         .footer h2 {
             color: #c58b2a;
             font-size: 24px;
             letter-spacing: 2px;
-            margin: 0 0 15px;
         }
 
-        /* Mobile */
-
-        @media (max-width: 768px) {
-
-            .navbar {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 20px;
-            }
-
-            .sports-hero {
-                padding: 40px 20px;
-            }
-
-            .sports-hero h1 {
-                font-size: 32px;
-            }
-
-            .shoe-card {
-                margin: 10px;
-            }
-
+        .footer p {
+            font-size: 14px;
+            margin: 8px;
         }
 
     </style>
-
 </head>
 
 <body>
@@ -228,7 +165,7 @@
     </div>
 
 
-    <!-- Navigation Bar -->
+    <!-- Navigation -->
 
     <div class="navbar">
 
@@ -246,47 +183,38 @@
 
             <a href="sports.html" class="active">Sports</a>
 
-            <a href="offers.html">offers</a>
+            <a href="offers.html">Offers</a>
 
-            <a href="contact.html">contact us</a>
+            <a href="contact.html">Contact Us</a>
 
         </div>
 
     </div>
 
 
-    <!-- Sports Hero -->
+    <!-- Page Heading -->
 
-    <div class="sports-hero">
+    <div class="page-heading">
 
-        <p>PERFORMANCE • COMFORT • STYLE</p>
+        <h1>Sports Shoes</h1>
 
-        <h1>SPORTS SHOES</h1>
-
-        <p class="subtitle">
-            Step up your performance with comfortable and stylish
-            sports footwear designed for every active step.
+        <p>
+            Comfortable, stylish and durable footwear for every active step.
         </p>
 
     </div>
 
 
-    <!-- Sports Shoes Section -->
+    <!-- Sports Products -->
 
-    <div class="sports-section">
-
-        <h2>EXPLORE SPORTS SHOES</h2>
-
-        <p class="section-text">
-            Discover our collection of sports shoes for your active lifestyle.
-        </p>
+    <div class="products">
 
 
-        <!-- Shoe 1 -->
+        <!-- Product 1 -->
 
         <div class="shoe-card">
 
-            <img src="shoe1.png" alt="Premium Sports Shoes">
+            <img src="sshoe1.webp" alt="Premium Sports Shoes">
 
             <h3>Premium Sports Shoes</h3>
 
@@ -297,11 +225,11 @@
         </div>
 
 
-        <!-- Shoe 2 -->
+        <!-- Product 2 -->
 
         <div class="shoe-card">
 
-            <img src="shoe2.png" alt="Running Sports Shoes">
+            <img src="sshoe.webp" alt="Running Sports Shoes">
 
             <h3>Running Sports Shoes</h3>
 
@@ -312,11 +240,11 @@
         </div>
 
 
-        <!-- Shoe 3 -->
+        <!-- Product 3 -->
 
         <div class="shoe-card">
 
-            <img src="shoe3.png" alt="Comfort Sports Shoes">
+            <img src="sshoe3.webp" alt="Comfort Sports Shoes">
 
             <h3>Comfort Sports Shoes</h3>
 
@@ -327,11 +255,11 @@
         </div>
 
 
-        <!-- Shoe 4 -->
+        <!-- Product 4 -->
 
         <div class="shoe-card">
 
-            <img src="shoe4.png" alt="Active Sports Shoes">
+            <img src="sshoe4.webp" alt="Active Sports Shoes">
 
             <h3>Active Sports Shoes</h3>
 
@@ -341,6 +269,37 @@
 
         </div>
 
+
+        <!-- Product 5 -->
+
+        <div class="shoe-card">
+
+            <img src="shoe1.png" alt="Training Sports Shoes">
+
+            <h3>Training Sports Shoes</h3>
+
+            <p>₹1,699</p>
+
+            <button>VIEW PRODUCT</button>
+
+        </div>
+
+
+        <!-- Product 6 -->
+
+        <div class="shoe-card">
+
+            <img src="shoe2.png" alt="Daily Sports Shoes">
+
+            <h3>Daily Sports Shoes</h3>
+
+            <p>₹1,399</p>
+
+            <button>VIEW PRODUCT</button>
+
+        </div>
+
+
     </div>
 
 
@@ -349,8 +308,6 @@
     <div class="footer">
 
         <h2>PREET SHOE HOUSE</h2>
-
-        <p>© 2026 Preet Shoe House</p>
 
         <p>Stylish. Comfortable. Made for Every Step.</p>
 
