@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Unicorn Sneakers - Preet Shoe House</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #222;
+            background-color: #f5ead9;
+        }
+
+        .top-bar {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .navbar {
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar img {
+            width: 200px;
+            height: 90px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 22px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #222;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #c58b2a;
+        }
+
+        .product-section {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            padding: 60px 8%;
+            min-height: 500px;
+        }
+
+        .product-image {
+            width: 450px;
+            height: 450px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-image img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .product-details {
+            max-width: 450px;
+        }
+
+        .product-details h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 25px;
+            color: #c58b2a;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .sizes {
+            margin-bottom: 25px;
+        }
+
+        .sizes span {
+            display: inline-block;
+            border: 1px solid #222;
+            background-color: white;
+            padding: 10px 15px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+
+        .buy-btn {
+            background-color: #c58b2a;
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .buy-btn:hover {
+            background-color: #111;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 25px;
+            color: #222;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            color: #c58b2a;
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 800px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            .product-section {
+                flex-direction: column;
+                padding: 40px 5%;
+            }
+
+            .product-image {
+                width: 100%;
+                max-width: 450px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar">
+        STEP INTO STYLE, WALK WITH CONFIDENCE
+    </div>
+
+    <div class="navbar">
+
+        <img src="logo1.png" alt="Preet Shoe House">
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="men.html">Men</a>
+            <a href="women.html">Women</a>
+            <a href="kids.html">Kids</a>
+            <a href="sports.html">Sports</a>
+            <a href="offers.html">Offers</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+    </div>
+
+    <section class="product-section">
+
+        <div class="product-image">
+            <img src="kshoe3.webp" alt="Unicorn Sneakers">
+        </div>
+
+        <div class="product-details">
+
+            <h1>Unicorn Sneakers</h1>
+
+            <div class="price">₹1,099</div>
+
+            <p class="description">
+                Cute and stylish unicorn sneakers designed especially
+                for kids. These shoes are comfortable and perfect for
+                everyday wear, playtime and outdoor activities.
+            </p>
+
+            <div class="sizes">
+                <strong>Available Sizes:</strong><br><br>
+
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+
+            <button class="buy-btn">BUY NOW</button>
+
+            <a class="back-link" href="kids.html">
+                ← Back to Kids
+            </a>
+
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 Preet Shoe House. All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>
