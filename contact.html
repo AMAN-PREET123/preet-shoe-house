@@ -443,7 +443,14 @@
  <script>
         function sendMessage(event) {
             event.preventDefault();
+                      let name = document.querySelector('input[type="text"]').value.trim();
+        let email = document.querySelector('input[type="email"]').value.trim();
+        let message = document.querySelector('textarea').value.trim();
 
+        if (name === "" || email === "" || message === "") {
+            alert("Please fill in Name, Email and Message.");
+            return;
+        }
             alert("Message sent successfully!");
 
             event.target.reset();
