@@ -175,7 +175,7 @@
     <div class="order-section">
 
         <h1>Place Your Order</h1>
-
+      <form onsubmit="placeOrder(event)">
         <div class="form-group">
 
             <label>Full Name</label>
@@ -241,7 +241,30 @@
         </p>
 
     </div>
-    </script>
+    <script>
+
+    function placeOrder(event) {
+
+        event.preventDefault();
+
+        let name = document.querySelector('input[type="text"]').value.trim();
+        let phone = document.querySelector('input[type="tel"]').value.trim();
+        let address = document.querySelector('textarea').value.trim();
+        let size = document.querySelector('select').value;
+
+        if (name === "" || phone === "" || address === "" || size === "") {
+
+            alert("Please fill in all the information before placing the order.");
+
+            return;
+        }
+
+        window.location.href = "confirmation.html";
+
+    }
+
+</script>
+    
 </body>
 
 </html>
