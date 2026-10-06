@@ -349,7 +349,7 @@
 
             <h2>CONTACT US</h2>
 
-            <form>
+            <form onsubmit="sendMessage(event)">
 
                 <label>Name</label>
 
@@ -440,7 +440,15 @@
         <p>© 2026 Preet Shoe House. All Rights Reserved.</p>
 
     </div>
+ <script>
+        function sendMessage(event) {
+            event.preventDefault();
 
+            alert("Message sent successfully!");
+
+            event.target.reset();
+        }
+    </script>
 </body>
 
 </html>
